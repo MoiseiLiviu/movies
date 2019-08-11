@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 
 import {getGenresList} from '../../actions';
 
@@ -22,7 +23,7 @@ componentDidMount(){
             <div className='people-credits__card__header'>          
              <img className='people-credits__card__header__img' alt={credit.original_title} src={`https://image.tmdb.org/t/p/w92/${credit.poster_path}`}/>
              <div className='people-credits__card__header__info'>
-                 <h2 className='people-credits__card__header__info__title heading-2'>{credit.title||'Could not load the title :('}</h2>
+                 <Link to={`/details/${credit.media_type==='tv'?credit.media_type:'movies'}/${credit.id}`} className='people-credits__card__header__info__title heading-2'>{credit.title||'Could not load the title :('}</Link>
                  <h3 className='heading-3'>{credit.character||''}</h3>
              </div>
             </div>

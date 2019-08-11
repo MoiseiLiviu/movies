@@ -44,7 +44,6 @@ componentDidMount(){
 }
 
     render(){
-      console.log(this.state.page);
         return(
             <div className='discover'>
                 <MainNav/>

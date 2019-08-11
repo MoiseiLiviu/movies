@@ -155,6 +155,7 @@ renderDetailsHeader(type){
 
        </div>
       )
+    default:return null;
   }
  };
 
@@ -175,6 +176,7 @@ renderDetailsHeader(type){
             <p className='details--overview__summary__story heading-3'>{this.props.details.biography?this.shortText(this.props.details.biography,100):'No biography aviable'}</p>
         </div>
        )
+       default:return null;
    }
  }
 
@@ -191,7 +193,8 @@ renderDetailsHeader(type){
        );
      case 'people':
        return <PeopleCredits shortText={this.shortText} genres={this.props.genres} determineGenre={this.determineGenre} credits={this.props.personCredits} renderGenres={this.renderGenres}/>
-   }
+     default:return null;
+      }
  }
 
     render(){
@@ -212,12 +215,12 @@ renderDetailsHeader(type){
      {/* Share bar */}
      <div className="item-details-share-buttons item-details-share-buttons__hide">
 
-         <a onClick={this.handleShareButton} href={`mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 ${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}`}><img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
-         <a onClick={this.handleShareButton} href={`http://www.facebook.com/sharer.php?u=${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-         <a onClick={this.handleShareButton} href={`https://plus.google.com/share?url=${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /> </a>
-         <a onClick={this.handleShareButton} href={`http://reddit.com/submit?url=${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}&amp;title=Film Cloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
-         <a onClick={this.handleShareButton} href={`http://www.tumblr.com/share/link?url=${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}&amp;title=Film Cloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" /></a>
-         <a onClick={this.handleShareButton} href={`https://twitter.com/share?url=${'www.filmcloud.xyz/' + this.props.match.params.type + '/' + `${this.props.details.id}`}&amp;text=Film%20Cloud%20&amp;hashtags=filmcloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+         <a onClick={this.handleShareButton} href={`mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}`}><img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+         <a onClick={this.handleShareButton} href={`http://www.facebook.com/sharer.php?u=www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+         <a onClick={this.handleShareButton} href={`https://plus.google.com/share?url=www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /> </a>
+         <a onClick={this.handleShareButton} href={`http://reddit.com/submit?url=www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}&amp;title=Film Cloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+         <a onClick={this.handleShareButton} href={`http://www.tumblr.com/share/link?url=www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}&amp;title=Film Cloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" /></a>
+         <a onClick={this.handleShareButton} href={`https://twitter.com/share?url=www.filmcloud.xyz/${this.props.match.params.type}/${this.props.details.id}&amp;text=Film%20Cloud%20&amp;hashtags=filmcloud`} rel="noopener noreferrer" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
 
 </div>
          {this.renderDetailsHeader(this.props.match.params.type)}

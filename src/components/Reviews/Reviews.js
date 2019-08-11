@@ -11,7 +11,6 @@ class Reviews extends React.Component{
     }
 
     render(){
-        console.log(this.props.reviews)
         return(
             <div className='reviews-container'>
               <h2 className='heading-2'>Reviews:</h2>

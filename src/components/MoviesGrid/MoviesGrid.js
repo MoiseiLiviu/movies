@@ -6,7 +6,6 @@ import './MoviesGrid.scss';
 class MoviesGrid extends Component{
 
     render(){
-      console.log(this.props.movies)
         return(
           <div className='discover-main'>
             {this.props.movies?this.props.type==='discover'?this.props.movies.map(movie=>

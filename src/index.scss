@@ -9,6 +9,9 @@ body {
   } 
 
 html{
+  @media only screen and(max-width:768px){
+    font-size: 45%;
+  }
   font-size: 62.5%;
   font-family: sans-serif
 }

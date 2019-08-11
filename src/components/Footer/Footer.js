@@ -8,7 +8,7 @@ class Footer extends React.Component{
             <div id="footer" className='footer'>
                 <div className='footer__info'>
                       <div className='internal-links'>
-                         <h3 className='internal-links__cloud'>FilmCloud</h3>
+                         <h3 className='internal-links__cloud'>Movies Lobby</h3>
                          <div className='internal-links__page'>
                          <a href='/'>Home</a>
                          <a href='/'>Profile</a>
@@ -28,7 +28,7 @@ class Footer extends React.Component{
                 </div>
 
                 <div className='footer__social'>
-                   <img className='footer__social__img' src={require('../../img/DBLogo.png')}/>
+                   <img alt='dblogo' className='footer__social__img' src={require('../../img/DBLogo.png')}/>
                    <div className='footer__social__main'>
                         <a className='footer__social__main__links' href='https://github.com/MoiseiLiviu?tab=repositories'>
                             <i className="github alternate icon footer__social__main__links__icons"></i>
@@ -36,7 +36,7 @@ class Footer extends React.Component{
                         <a className='footer__social__main__links' href='/'>
                             <i className="code icon footer__social__main__links__icons"></i>
                         </a>
-                        <a className='footer__social__main__links' href=''>
+                        <a className='footer__social__main__links' href='/'>
                             <i className="facebook icon footer__social__main__links__icons"></i>
                         </a>
                    </div>

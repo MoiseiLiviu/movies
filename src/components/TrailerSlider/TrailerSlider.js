@@ -48,7 +48,7 @@ class TrailerSlider extends React.Component{
             
             return(
               <div key={trailer.id} style={{padding:'0 4rem'}}>
-               <iframe  width='250px' height='150px' key={i} key={trailer.id} src={`https://www.youtube.com/embed/${trailer.key}`} alt={trailer.name}/>
+               <iframe title={trailer.title} width='250px' height='150px' key={trailer.id} src={`https://www.youtube.com/embed/${trailer.key}`} alt={trailer.name}/>
               </div>
         )}):(
           <div>

@@ -38,8 +38,6 @@ renderItems(){
 
     render(){
 
-        console.log(this.state.currentSlide);
-
            const settings = {
             infinite: true,
             speed: 500,

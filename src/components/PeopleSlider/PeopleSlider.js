@@ -48,7 +48,7 @@ class PeopleSlider extends React.Component{
                        <img alt={person.name} className='people-slider__card__img' src={this.props.people?`https://image.tmdb.org/t/p/w185/${person.profile_path}`:''}/>
                        <h3 className='people-slider__card__name heading-3'>{person.name}</h3>
                      </Link>)
-                      }
+                          }
                      }
                     )
                   }
