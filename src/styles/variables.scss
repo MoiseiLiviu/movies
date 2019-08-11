@@ -1,0 +1,20 @@
+$--color-primary: #000033;
+$color-grey-light1:#dadfe8;
+$color-grey-light2:#b3b3b3;
+$color-grey-dark1:#1a1a1a;
+$--color-secondary:#ff661a;
+
+$--shadow-box: 0.4rem 1rem 1.2rem 0.3rem rgba(black,0.75);
+
+@mixin slider-flex {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+@mixin default-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}

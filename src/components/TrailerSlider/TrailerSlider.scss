@@ -1,0 +1,16 @@
+.trailer-slider{
+    margin-top: 7rem;
+    
+    &__heading{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 2.5rem;
+    }
+}
+
+iframe{
+    margin: 0 auto;
+    border: none;
+    height: 15rem;
+    display: block;
+}

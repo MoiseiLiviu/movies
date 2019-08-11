@@ -1,0 +1,15 @@
+.search-results-container{
+    position: relative;
+    &__main{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15rem;
+        &__title{
+            margin: 0 auto;
+            margin-bottom: 7rem;
+            display: inline-block;
+            border-bottom: 2px solid white;
+            padding: .3rem 2rem;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.reviews-container{
+    margin-top: 10rem;
+}
+
+.review{
+
+    background-color: $color-grey-dark1;
+    padding: 3rem 2.5rem;
+    margin-bottom: 4rem;
+
+    &__link:link,
+    &__link:visited{
+    font-weight: 500;
+    color:white;
+    text-decoration: none
+    }
+
+    &__author{
+     font-size: 2.3rem;
+     line-height: 1.6;
+     border-bottom: 2px solid $color-grey-light1;
+     display: inline-block;
+     padding: .5rem;
+     margin-bottom: 2rem;
+    }
+    
+    &__content{
+     line-height: 1.5;
+     font-weight: 400;
+     color: $color-grey-light1;
+    }
+
+    &__not-found{
+        margin-top: 4rem;
+        background-color: $color-grey-dark1;
+        height: 13rem;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        padding: 2rem 2rem;
+        margin-bottom: 5rem;
+    }
+
+    }

@@ -1,0 +1,19 @@
+@import './styles/variables.scss';
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+
+    background-color: $--color-primary;
+    background-size: cover;
+  } 
+
+html{
+  font-size: 62.5%;
+  font-family: sans-serif
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}

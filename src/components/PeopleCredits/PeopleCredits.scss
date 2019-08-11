@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.people-credits{
+    margin-top: 7rem;
+    &__card{
+        margin-bottom: 6rem;
+        background-color: $color-grey-dark1;
+        &__header{
+        padding: 1rem 2rem;
+        display: flex;
+        min-height: 18rem;
+        &__img{
+            
+            height: 15rem;
+            margin-right: 2rem;
+            
+        }
+        &__info{
+            align-self: center;
+            max-width: 85%;
+            &__overview{
+            padding: 1rem 3rem;
+            }
+        }
+    }
+}
+}

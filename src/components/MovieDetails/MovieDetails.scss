@@ -1,0 +1,166 @@
+@import '../../styles/variables.scss';
+
+.details--heading{
+       display: block;
+       position: relative;
+
+       &__img-container{
+              position: relative;
+       }
+         &__back-img{
+              position: relative;
+              z-index: 1;
+              display: inline-block;
+              width: 100%;
+              max-height: 100vh;
+         }
+
+       &__info{
+          color: white;
+          font-size: 1.7rem;
+          display: grid;
+          grid-gap: 3rem;
+          grid-template-columns: min-content 1fr;
+          position: absolute;
+          bottom: 4.5rem;
+          left: 10%;
+          z-index: 10;
+
+             &__rating-container{
+                display: flex;
+             }
+             &__vote{
+                 font-size: 1.7rem;
+                 margin-right: 2rem;
+              }
+          
+              &__status{
+                 color: lightgray;
+              }
+         
+              &__title{
+                 font-weight:800;
+                 font-size: 2.5rem}
+
+               &__details{
+                   &>*{
+                     margin-top: 1.5rem;
+                   }
+              }
+
+          &__img{
+                 width: 13rem;
+                 box-shadow: $--shadow-box
+          
+          }
+         }
+}
+
+.details--overview{
+       width: 70vw;
+       margin: 0 auto;
+       margin-top: 5rem;
+       
+       position: relative;
+       &__summary{
+              &__title{
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 3rem;
+              }
+       }
+}
+
+.img-gradient{
+                     position: absolute;
+                     background-image: linear-gradient(0deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0.45) 92%);
+                     background-size: cover;
+                     display: block;
+                     height: 100%;
+                     width: 100%;
+                     z-index: 5;
+                     top: 0;
+}
+
+@media only screen and (max-width: 600px){
+      .details--overview{
+             width: 100vw;
+      }
+
+      .details--heading{
+             &__info{
+                    position: absolute;
+                    bottom: 0;
+                    row-gap: .5rem;
+                    line-height: .5;
+                    font-size: .3rem;
+                    
+             &__img{
+                    width: 8rem;
+                    box-shadow: none;
+                    align-self: end;
+
+             }
+             &__details{
+                    font-size: 1rem;
+             }
+
+       }
+       &__info--{
+              font-size: 1.4rem;
+       }
+      }
+   }
+
+   .item-details{&-nav{
+       @media only screen and(max-width:768px){
+              display: none;
+       }
+       width: 80vw;
+       margin-left: 8%;
+       z-index: 300;
+       top:7vh;
+       position: absolute;
+       display: grid;
+       grid-template-columns: 40px 40px;
+       justify-content: space-between;
+       padding: 2rem 1rem 90px;
+ 
+       // item-details-header-info-nav__icon
+       &__icon {
+         cursor: pointer;
+         fill: white;
+         height: auto;
+         width: 40px;
+       }
+     }
+ 
+     // item-details-header-info-share-buttons
+     &-share-buttons {
+       z-index: 300;
+       display: grid;
+       grid-template-columns: 40px;
+       grid-template-rows: repeat(40px, 6);
+       height: 282px;
+       overflow: hidden;
+       position: absolute;
+       right: 12px;
+       top: 4.5rem;
+       transition: height .5s;
+ 
+       a {
+ 
+         img {
+           height: auto;
+           width: 40px;
+         }
+       }
+     }
+ 
+     // item-details-header-info-share-buttons__hide
+     &-share-buttons__hide {
+       height: 0;
+       overflow: hidden;
+       transition: height .5s;
+ }
+}

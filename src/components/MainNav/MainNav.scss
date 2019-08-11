@@ -1,0 +1,114 @@
+@import '../../styles/variables.scss';
+
+.main-nav{
+
+    @media only screen and(max-width:900px){
+       display:none;
+    
+       &__form{
+           margin: 0 auto;
+       }
+    }
+    background-color: rgba(black,.6);
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 120;
+    width: 100vw;
+    padding: 0.7rem 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icons{
+        @media only screen and(max-width:900px){
+            position: fixed;
+            bottom: 0;
+            background: rgba(0,0,0,.8);
+            width: 100vw;
+            justify-content: space-around;
+        }
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .8rem;
+        fill: $--color-secondary;
+        padding-right: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__logo{
+        width: 4.5rem;
+        height: 4.5rem;   
+        margin-left: 2rem;    
+    }
+    &__form{
+        width: 30%;
+        @media only screen and(max-width:900px){
+        width: 60%;
+        padding-right: 4rem;
+        }
+        display: flex;
+        align-items: center;
+        &__input{
+            width: 100%;
+            margin-right: -6rem;
+            height: 4rem;
+            font-weight: bold;
+            border: 2px solid $--color-secondary;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            outline: none;
+            padding-left: 2rem;
+            letter-spacing: 1px;
+            
+        }
+        &__search{
+            background-color: white;
+            border: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 20px;
+            width: .5rem;
+            height: .5rem;
+            cursor: pointer;
+            fill: darkorange;
+        }
+    }
+}
+
+.hamburger-container {
+    @media only screen and(max-width:900px){
+        display:inline-block
+    };
+    display:none;
+    z-index: 140;
+    position: fixed;
+    top:1.4rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .active {
+    display:flex;
+}
