@@ -21,7 +21,7 @@ class Footer extends React.Component{
                               <h3>phone number:</h3>
                           </div>
                           <div className='contacts__actual'>
-                               <a href='/'>www.MlTechnologies.com</a>
+                               <a href='https://ml-blog.xyz/'>ml-blog.xyz</a>
                                <h3>+37368767688</h3>
                           </div>
                       </div>
@@ -40,7 +40,7 @@ class Footer extends React.Component{
                             <i className="facebook icon footer__social__main__links__icons"></i>
                         </a>
                    </div>
-                   <p className='footer__social__main__copy'>©2019 Code and design by Moisei Liviu.</p>
+                   <p className='footer__social__main__copy'>©2019 Moisei Liviu.</p>
                 </div>
             </div>
         )
